@@ -10,9 +10,9 @@ class Preprocessor:
     """
         This class shall  be used to clean and transform the data before training.
 
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
+        
+        
+        
 
         """
 
@@ -27,9 +27,9 @@ class Preprocessor:
                 Output: A pandas DataFrame after removing the specified columns.
                 On Failure: Raise Exception
 
-                Written By: iNeuron Intelligence
-                Version: 1.0
-                Revisions: None
+                
+                
+                
 
         """
         self.logger_object.log(self.file_object, 'Entered the remove_columns method of the Preprocessor class')
@@ -53,9 +53,9 @@ class Preprocessor:
                         Output: Returns two separate Dataframes, one containing features and the other containing Labels .
                         On Failure: Raise Exception
 
-                        Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
+                        
+                        
+                        
 
                 """
         self.logger_object.log(self.file_object, 'Entered the separate_label_feature method of the Preprocessor class')
@@ -75,9 +75,9 @@ class Preprocessor:
                         Method Name: is_null_present
                         Description: This method drops the unwanted columns as discussed in EDA section.
 
-                        Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
+                        
+                        
+                        
 
                                 """
         data = data.drop(columnNameList,axis=1)
@@ -90,9 +90,9 @@ class Preprocessor:
                                Method Name: is_null_present
                                Description: This method replaces invalid values i.e. '?' with null, as discussed in EDA.
 
-                               Written By: iNeuron Intelligence
-                               Version: 1.0
-                               Revisions: None
+                               
+                               
+                               
 
                                        """
 
@@ -110,9 +110,9 @@ class Preprocessor:
                                         returns the list of columns for which null values are present.
                                 On Failure: Raise Exception
 
-                                Written By: iNeuron Intelligence
-                                Version: 1.0
-                                Revisions: None
+                                
+                                
+                                
 
                         """
         self.logger_object.log(self.file_object, 'Entered the is_null_present method of the Preprocessor class')
@@ -144,9 +144,9 @@ class Preprocessor:
                                         Output: A Dataframe which has all the categorical values encoded.
                                         On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
-                                        Version: 1.0
-                                        Revisions: None
+                                        
+                                        
+                                        
                      """
      data["class"] = data["class"].map({'p': 1, 'e': 2})
 
@@ -163,9 +163,9 @@ class Preprocessor:
                                                Output: A Dataframe which has all the categorical values encoded.
                                                On Failure: Raise Exception
 
-                                               Written By: iNeuron Intelligence
-                                               Version: 1.0
-                                               Revisions: None
+                                               
+                                               
+                                               
                             """
 
         for column in data.columns:
@@ -180,9 +180,9 @@ class Preprocessor:
     #                                                   Output: A Dataframe which is balanced now.
     #                                                   On Failure: Raise Exception
     #
-    #                                                   Written By: iNeuron Intelligence
-    #                                                   Version: 1.0
-    #                                                   Revisions: None
+    #                                                   
+    #                                                   
+    #                                                   
     #                                """
     #
     #
@@ -215,9 +215,9 @@ class Preprocessor:
                                         Output: A Dataframe which has all the missing values imputed.
                                         On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
-                                        Version: 1.0
-                                        Revisions: None
+                                        
+                                        
+                                        
                      """
         self.logger_object.log(self.file_object, 'Entered the impute_missing_values method of the Preprocessor class')
         self.data= data
@@ -240,9 +240,9 @@ class Preprocessor:
                                                 Output: List of the columns with standard deviation of zero
                                                 On Failure: Raise Exception
 
-                                                Written By: iNeuron Intelligence
-                                                Version: 1.0
-                                                Revisions: None
+                                                
+                                                
+                                                
                              """
         self.logger_object.log(self.file_object, 'Entered the get_columns_with_zero_std_deviation method of the Preprocessor class')
         self.columns=data.columns

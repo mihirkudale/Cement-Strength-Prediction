@@ -7,9 +7,9 @@ from sklearn.linear_model import LinearRegression
 class Model_Finder:
     """
                 This class shall  be used to find the model with best accuracy and AUC score.
-                Written By: iNeuron Intelligence
-                Version: 1.0
-                Revisions: None
+                
+                
+                
 
                 """
 
@@ -28,9 +28,9 @@ class Model_Finder:
                                                 Output: The model with the best parameters
                                                 On Failure: Raise Exception
 
-                                                Written By: iNeuron Intelligence
-                                                Version: 1.0
-                                                Revisions: None
+                                                
+                                                
+                                                
 
                                         """
         self.logger_object.log(self.file_object,
@@ -81,9 +81,9 @@ class Model_Finder:
                                         Output: The model with the best parameters
                                         On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
-                                        Version: 1.0
-                                        Revisions: None
+                                        
+                                        
+                                        
 
                                 """
         self.logger_object.log(self.file_object,
@@ -128,9 +128,9 @@ class Model_Finder:
                                                 Output: The best model name and the model object
                                                 On Failure: Raise Exception
 
-                                                Written By: iNeuron Intelligence
-                                                Version: 1.0
-                                                Revisions: None
+                                                
+                                                
+                                                
 
                                         """
         self.logger_object.log(self.file_object,
